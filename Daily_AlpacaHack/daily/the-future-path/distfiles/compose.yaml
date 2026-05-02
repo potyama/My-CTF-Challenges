@@ -1,0 +1,7 @@
+services:
+  challenge:
+    build: .
+    environment:
+      - FLAG=Alpaca{S0m3t1m3s_w3_m1ght_n33d_t0_l00k_b4ck_4t_th3_p4st...:<}
+    ports:
+      - "${PORT:-1337}:1337"
