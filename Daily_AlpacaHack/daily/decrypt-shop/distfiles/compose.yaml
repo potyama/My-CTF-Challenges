@@ -1,0 +1,8 @@
+services:
+  challenge:
+    build: .
+    environment:
+      - FLAG=Alpaca{seikai_nante_iikara_honto_wo_siyou_198a858b65108d3aa5ecad9f28f29e84a4429f1c}
+    ports:
+      - "${PORT:-1337}:1337"
+    restart: unless-stopped
